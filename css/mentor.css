@@ -1,0 +1,53 @@
+
+
+.sectionmentor{  
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  min-height: 99vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrap{
+    position: relative;
+  } 
+  
+  .drop{
+    background-color:rgba(255,255,255,0.4);
+    border-radius: 10px;
+    border:1px solid rgba(255,255,255,0.2);
+    position: absolute;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display:block;
+    margin:0 auto;
+    width: 100%;
+  }
+  .drop1{
+    width:100%;
+    
+    top:56px;
+    left:0;
+    right:0;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  
+  
+    

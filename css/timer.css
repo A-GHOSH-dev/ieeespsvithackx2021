@@ -1,0 +1,158 @@
+
+#clockdiv{ 
+    width: 100%;
+    font-family: sans-serif; 
+    color: #fff; 
+    display: inline-block; 
+    font-weight: bolder; 
+    text-align: center; 
+    font-size: 40px; 
+} 
+
+#clockdiv > div{ 
+    padding: 20px; 
+    border-radius: 3px; 
+    background: #850353; 
+    display: inline-block; 
+} 
+#clockdiv div > span{ 
+    padding: 50px; 
+    border-radius: 3px; 
+    background: #c4088b; 
+    display: inline-block; 
+} 
+.smalltext{ 
+    padding-top: 10px; 
+    font-size: 20px; 
+} 
+
+
+.prizess{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pbody {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    min-height: 100vh;
+    
+  }
+  .pbody .containerp {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 50px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  .pbody .containerp .cardp {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background: rgb(173, 3, 117);
+    border-radius: 15px;
+   
+  }
+  .pbody .containerp .cardp .facep {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pbody .containerp .cardp .facep.facep1 {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .pbody .containerp .cardp .facep.facep1 img {
+  margin: 0;
+    padding: 0;
+  }
+  .pbody .containerp .cardp .facep.facep1 .java {
+  background-color: #fbffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .pbody .containerp .cardp .facep.facep1 .python {
+  background-color: #fafdfd;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .pbody .containerp .cardp .facep.facep1 .cSharp {
+  background-color: #fffeff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+    .pbody .containerp .cardp .facep.facep2 {
+    transition: 0.5s;
+  }
+  .pbody .containerp .cardp .facep.facep2 img {
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: #fff;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+  .pbody .containerp .cardp:hover .facep.facep2 {
+    height: 60px;
+  }
+  .pbody .containerp .cardp:hover .facep.facep2 img {
+    font-size: 2em;
+  }
+  .pbody .containerp .cardp:nth-child(1) .facep.facep2 {
+    background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
+    border-radius: 15px;
+  }
+  .pbody .containerp .cardp:nth-child(2) .facep.facep2 {
+    background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
+    border-radius: 15px;
+  }
+  .pbody .containerp .cardp:nth-child(3) .facep.facep2 {
+    background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
+    border-radius: 15px;
+  }
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
+    
+      
+<link href=" css/mybutton.css " rel="stylesheet">
+  
+<link href=" css/eventime.css " rel="stylesheet">
+
+  
+<link href=" css/card.css " rel="stylesheet">
+  
+<link href=" css/footer.css " rel="stylesheet">
+  
+<link href=" css/team.css " rel="stylesheet">
+  
+<link href=" css/faq.css " rel="stylesheet">
+  
+<link href=" css/events.css " rel="stylesheet">
+  
+<!--<link href="judges.css" rel="stylesheet">-->
+<link href=" css/timer.css " rel="stylesheet">
+  
+<link href=" css/mentor.css " rel="stylesheet">
+
+<!--<link href="slider.css" rel="stylesheet">-->
+  
+
+<script src=" js/script.js "></script>
+
+
+
+
+
+
+    
+
+    <title>HackX</title>
+
+    <style>
+
+
+
+
+
+
+html,body {
+  margin: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #050505;
+  overflow-x: hidden;
+  
+}
+
+
+        .nav {
+  height: 50px;
+  width: 100%;
+  background-color: #050505;
+  position:sticky;
+ 
+}
+ 
+.nav > .nav-header {
+  display: inline;
+}
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 0px 10px 10px 10px;
+}
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 16px;
+}
+.logo{
+    height: 60px;
+    width: 100px;
+}
+ 
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 20px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+ 
+.nav > .nav-links > a:hover {
+    
+  padding: 10px;
+    
+  
+  
+    animation: glow 1s ease-in-out infinite alternate;
+  color: #faa8d1;
+  /*background: linear-gradient(180deg, var(--c1, #8b045e), var(--c2, #e06cba) 51%, var(--c1, #f7f1f5)) var(--x, 0)/ 200%;*/
+}
+
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f08bbd, 0 0 40px #e48bb7, 0 0 50px #eb7eb4, 0 0 60px #f07db7, 0 0 70px #f07db7;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ec96c1, 0 0 40px #e986b7, 0 0 50px #df89b4, 0 0 60px #ca719e, 0 0 70px #f38cc0, 0 0 80px #ec6aab;
+  }
+}
+
+
+
+
+.nav > .nav-btn,
+.nav > #nav-check {
+  display: none;
+}
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: rgb(165, 7, 112);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+  
+  * {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: top;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+  
+
+    
+</head>
+<body>
+
+
+  
+
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+              
+            <img src=" images/hackx logo2.png " alt="hackx logo" class="logo">
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="#about">About Us</a>
+          <a href="#themes">Themes</a>
+          <a href="#timeline">Timeline</a>
+          
+          <a href="#prizes">Prizes</a>
+          <a href="#sponsors">Sponsors</a>
+          
+          <a href="#contacts">Contacts</a>
+        </div>
+      </div>
+    
+
+
+      
+  
+ 
+      
+  <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/2 mb-10 px-1">
+        <div class="rounded-lg h-100 overflow-hidden">
+            
+          <img alt="content" class="object-cover object-center h-full*1/2 w-full" src=" images/hackx logo.jpg ">
+        </div>
+        
+      </div>
+      <div class="sm:w-1/2 mb-10 px-1">
+        <div class="rounded-lg h-120 overflow-hidden">
+            
+          <img alt="content" class="object-cover object-center h-full w-full" src=" images/1stpage.png ">
+        </div>
+        
+        <a href="registration.html"><button id="testbutton" class="flex mx-auto mt-6 text-white bg-black-500 border-solid border-5 border-pink-400 py-2 px-5 focus:outline-none hover:bg-pink-600 rounded-3xl">Register Now</button></a>
+        <button id="testbutton2" class="flex mx-auto mt-6 text-white bg-black-500 border-solid border-5 border-pink-400 py-2 px-5 focus:outline-none hover:bg-pink-600 rounded-3xl">Join our Discord</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<div id="clockdiv"> 
+  <div> 
+    <span class="days" id="day"></span> 
+    <div class="smalltext">Days</div> 
+  </div> 
+  <div> 
+    <span class="hours" id="hour"></span> 
+    <div class="smalltext">Hours</div> 
+  </div> 
+  <div> 
+    <span class="minutes" id="minute"></span> 
+    <div class="smalltext">Minutes</div> 
+  </div> 
+  <div> 
+    <span class="seconds" id="second"></span> 
+    <div class="smalltext">Seconds</div> 
+  </div> 
+</div> 
+  
+<p font-size=7 id="demo"></p> 
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="text-gray-200 body-font">
+    
+  <img id="about" class="container mx-auto flex px-5 py-1 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src=" images/abouthead.png ">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        
+      <img class="object-cover object-center rounded" alt="hero" src=" images/TO BE ANNOUNCED SOON.gif ">
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200">About IEEE SPS VIT Vellore</h1>
+      <p class="mb-8 text-justify leading-relaxed">Founded as IEEE’s first society in 1948, the Signal Processing
+Society is the world’s premier association for signal processing
+engineers and industry professionals. IEEE-SPS VIT Chapter is one
+of the leading and finest student chapters in VIT University.
+We conduct webinars, classroom sessions for hands-on
+experience, night lab sessions and outreach in Vellore. Our
+primary vision is to provide the innovative and enthusiastic
+'engineers-to-be' a platform to explore their ideas and knowledge
+in the Signal Processing field. We aim at making students apply
+their knowledge into real-life, productive projects; hereby creating
+progress in the scientific arena.</p>
+      <div class="flex w-full md:justify-start justify-center items-end">
+        
+        
+      </div>
+     
+      <div class="flex lg:flex-row md:flex-col">
+        <a href="https://www.spsvit.com"><button id="testbutton3" class="flex mx-auto mt-6 text-white bg-black-500 border-solid border-5 border-pink-400 py-2 px-5 focus:outline-none hover:bg-pink-600 rounded-3xl">Website</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="text-gray-200 body-font">
+  <div class="container mx-auto flex px-5 py-13 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200">About HackX</h1>
+      <p class="mb-8 text-justify leading-relaxed">HackX is a premium 36- hours hackathon to be organised by IEEE-SPS, vit student chapter. With the aim of providing aspiring engineers and tech enthusiasts a platform to showcase their skills, this hackathon will promote development and exchange of scientific knowledge. It envisions to maximise creativity, competitiveness and efficiency among the participants.Students from all over VIT University and even external universities will be invited to be a part of this technical extravaganza. The hack will recognise the best projects and award them for their excellence.</p>
+      <div class="flex w-full md:justify-start justify-center items-end">
+        <div class="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
+          
+        </div>
+       
+      </div>
+      
+      <div class="flex lg:flex-row md:flex-col">
+          
+        <a href=" images/Brochure-IEEE SPS VIT.pdf "><button id="testbutton4" class="flex mx-auto mt-6 text-white bg-black-500 border-solid border-5 border-pink-400 py-2 px-5 focus:outline-none hover:bg-pink-600 rounded-3xl">Brochure</button></a>
+      </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        
+      <img class="object-cover object-center rounded" alt="hero" src=" images/HACKX.gif ">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<div>
+    
+<img id="themes" class="container mx-auto flex px-5 py-12 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src=" images/themehead.png ">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="pbody">
+      <div class="containerp">
+
+        <div class="cardp">
+          <div class="facep facep1">
+            <div class="contentp">
+              <span class="stars"></span>
+              
+              <p class="java">Infusing the digital processors in performing wide range of signal processing operations and analysis. Starting from audio or human speech processing to sonar and radar processing by practical DSP platforms.</p>
+            </div>
+          </div>
+          
+            <img src="images/webhead1.png" class="facep facep2"> 
+          
+        </div>
+      
+
+
+
+        <div class="cardp">
+          <div class="facep facep1">
+            <div class="contentp">
+              <span class="stars"></span>
+             
+              <p class="java">Voice recognition, image processing and text recognition are being embedded into the AI for developing it into a sensible recognition tool, making it inch closer towards the humanoid we intend to make. These have a plethora of application in our day to day, for example, a live translator.</p>
+            </div>
+          </div>
+          
+            <img src="images/appdev1.png" class="facep facep2"> 
+          
+        </div>
+
+
+
+
+        <div class="cardp">
+          <div class="facep facep1">
+            <div class="contentp">
+              <span class="stars"></span>
+              
+              <p class="java">Wearable technology, smartwear,skin electronics or fashion electronics are smart electronic devices that are worn close to and on the surface of the skin, where they detect, analyze, and transmit information concerning e.g. body signals such as vital signs, ambient data which allow in some cases immediate biofeedback to the wearer.</p>
+            </div>
+          </div>
+          
+            <img src="images/AIML.png" class="facep facep2"> 
+          
+        </div>
+
+
+
+
+        <div class="cardp">
+          <div class="facep facep1">
+            <div class="contentp">
+              <span class="stars"></span>
+             
+              <p class="java">The Electronics industry has seen tremendous and exponential growth. With a focus on automobiles, consumer electronics, and mobile phones, this area has seen unprecedented innovation. Communication devices have become almost indispensable: whether it's Netflix or Skype.</p>
+            </div>
+          </div>
+          
+            <img src="images/iot2.png" class="facep facep2"> 
+          
+        </div>
+
+
+
+
+        <div class="cardp">
+          <div class="facep facep1">
+            <div class="contentp">
+              <span class="stars"></span>
+              
+              <p class="java">No longer does the object just relate to the process; it now connects to surrounding objects and database data, permitting “big data” analytics and insights. In particular, “things” might communicate autonomously with other things and other devices, such as sensors in manufacturing environments. 
+</p>
+            </div>
+          </div>
+          
+            <img src="images/arvr1.png" class="facep facep2"> 
+          
+        </div>
+
+
+
+
+        <div class="cardp">
+          <div class="facep facep1">
+            <div class="contentp">
+              <span class="stars"></span>
+              
+              <p class="java">There is an endless number of ideas that can be generated and implemented by understanding evolving technologies. Developing solutions for the problem statements and exercising your ideas without any restrictions since creativity knows no bounds.</p>
+            </div>
+          </div>
+          
+            <img src="images/blockchain.png" class="facep facep2"> 
+          
+        </div>
+
+
+
+
+
+
+      </div>
+
+     
+   
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+<div>
+    
+<img id="timeline" class="container mx-auto flex px-5 py-10 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src=" images/timehead.png ">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 items-center justify-center flex-col">
+      
+    <img class="lg:w-2/2 md:w-3/4 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src=" images/To be announced!! (1).gif ">
+    <div class="text-center lg:w-2/3 w-full">
+      
+      <div class="flex justify-center">
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    
+<img id="events" class="container mx-auto flex px-5 py-10 items-center justify-center flex-col lg:w-2/4 md:w-3/5 w-5/5 mb-0 object-cover object-center rounded" alt="hero" src=" images/mentorhead.png ">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 items-center justify-center flex-col">
+      
+    <img class="lg:w-2/2 md:w-3/4 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src=" images/time.gif ">
+    <div class="text-center lg:w-2/3 w-full">
+      
+      <div class="flex justify-center">
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    
+<img id="events" class="container mx-auto flex px-5 py-10 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src=" images/eventshead.png ">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 items-center justify-center flex-col">
+      
+    <img class="lg:w-2/2 md:w-3/4 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src=" images/To be announced soon22.gif">
+    <div class="text-center lg:w-2/3 w-full">
+      
+      <div class="flex justify-center">
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    
+<img id="prizes" class="container mx-auto flex px-5 py-12 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src=" images/prizehead1.png ">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 items-center justify-center flex-col">
+      
+    <img class="lg:w-2/2 md:w-3/4 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src=" images/prizesll.gif ">
+    <div class="text-center lg:w-2/3 w-full">
+      
+      <div class="flex justify-center">
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    
+<img id="sponsors" class="container mx-auto flex px-5 py-24 items-center justify-center flex-col lg:w-2/6 md:w-3/6 w-5/6 mb-0 object-cover object-center rounded" alt="hero" src=" images/sponsorshead.png ">
+
+</div>
+
+
+
+
+<div class="container mx-auto flex px-5 py-13 items-center justify-center flex-col">
+    
+    <img class="lg:w-2/3 md:w-3/4 w-5/6 mb-10 object-cover object-center w-full h-full rounded" alt="hero" src=" images/To be announced1.gif ">
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<b>
+
+
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+    <div class="box">
+   <p class="heading">FAQs</p>
+   <div class="faqs">
+      <details>
+         <summary>WHAT IS A HACKATHON?</summary>
+         <p class="text">A hackathon is best described as an “invention marathon”. Anyone who has an interest in technology attends a hackathon to learn, build & share their creations over the course of a weekend in a relaxed and welcoming atmosphere. You don’t have to be a programmer and you certainly don’t have to be majoring in Computer Science</p>
+      </details>
+      <details>
+         <summary>I JUST GRADUATED, CAN I STILL COME?</summary>
+         <p class="text">Yes. Anyone who has graduated a degree or currently studying  is eligible to participate in the hackathon. </p>
+      </details>
+      <details>
+         <summary>DO WE HAVE TO GO ANYWHERE TO ATTEND IT?</summary>
+         <p class="text">No, absolutely not. This is a Global Virtual Hackathon for Graduates and Undergraduates. </p>
+      </details>
+      <details>
+         <summary>WHY WOULD SOMEONE PARTICIPATE IN HACKX?</summary>
+         <p class="text">People participate in hackx for lots of reason: the challenge, the creative outlet, the community collaboration, the networking.</p>
+      </details>
+      <details>
+         <summary>WHO CAN PARTICIPATE? ARE THERE ANY PREREQUISITES OR REQUIRED SKILLS?</summary>
+         <p class="text">Anyone is welcome to participate in this event. While experience coding and programming is a huge plus, teams will also need people with strong presentation skills and brilliant ideas.</p>
+      </details>
+      <details>
+         <summary>WILL THERE BE TRAINING?</summary>
+         <p class="text">There is no pre-event training for hackx</p>
+      </details>
+      <details>
+         <summary>HOW MUCH DOES IT COST?</summary>
+         <p class="text">FREE. Free for spectators. Free for participants.</p>
+      </details>
+      <details>
+         <summary>WILL THERE BE PRIZES?</summary>
+         <p class="text">Absolutely. Check out our prize page for details.</p>
+      </details>
+      <details>
+         <summary>WHO WILL BE JUDGING?</summary>
+         <p class="text">The judge panel composition will be announced closer to the date of the hackx.</p>
+      </details>
+      <details>
+         <summary>WHERE DO I REGISTER?</summary>
+         <p class="text">Click on Register Now button present at top of this website and fill the form to register yourself. Do not forget to join our discord channel, as all further announcements will be made there. Stay Tuned!!</p>
+      </details>
+      <details>
+         <summary>DO I NEED A TEAM?</summary>
+         <p class="text">Yes, we do encourage team participants and we will help you team up as well. But yes, you can participate individually as well. Team Size: 1-4</p>
+      </details>
+   </div>
+</div>
+</b>
+    <div class="text-center lg:w-2/3 w-full">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-pink-500">Want to Sponsor Us?</h1>
+      <h6 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-pink-50">We would love to have you onboard!!</h6>
+      
+      <div class="flex justify-center">
+        <a href=""><button id="testbutton5" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button></a>
+        <a href="images/Brochure-IEEE SPS VIT.pdf "><button id="testbutton6" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button></a>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="text-gray-600 body-font relative">
+  <div class="absolute inset-0 bg-gray-300">
+    
+    <iframe  width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.001696423075!2d79.15722781409534!3d12.971742990855784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad479f0ccbe067%3A0xfef222e5f36ecdeb!2sVellore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1621480956739!5m2!1sen!2sin"></iframe>
+  </div>
+  <div class="container px-5 py-44 mx-auto flex">
+    <div class="lg:w-1/3 md:w-1/2 bg-none rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer id="contacts" class="footer-distributed">
+ 
+ <div class="footer-left">
+    
+ 
+ <img src=" images/newlogo 2.png " class="imagess">
+ 
+ <p class="footer-links">
+ <a href="#">Website</a>
+ ·
+ <a href="#">Medium Page</a>
+ ·
+ <a href="#">Brochure</a>
+ 
+ 
+ 
+ </p>
+ 
+ <p class="footer-company-name">ieeespsvit &copy; 2021</p>
+ </div>
+ 
+ <div class="footer-center">
+ 
+ <div>
+ <i class="fa fa-map-marker"></i>
+ <p><span>VIT, Vellore Campus, Tiruvalam Rd, Katpadi, Vellore,</span> Tamil Nadu 632014, India</p>
+ </div>
+ 
+ <div>
+ <i class="fa fa-phone"></i>
+ <p>1234567890</p>
+ </div>
+ 
+ <div>
+ <i class="fa fa-envelope"></i>
+ <p><a href="mailto:ieeesps@vit.ac.in">contact@hackx21.com</a></p>
+ </div>
+ 
+ </div>
+ 
+ <div class="footer-right">
+ 
+ <p class="footer-company-about">
+ <span>IEEE Signal Processing Society</span>
+ Vellore Institute of Technology, Vellore
+
+ </p>
+ 
+ <div class="footer-icons">
+
+ 
+
+
+            
+                      <a class="text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                      </a>
+                      <a class="ml-4 text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                        </svg>
+                      </a>
+                      <a class="ml-4 text-gray-500">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                      </a>
+                      <a class="ml-4 text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                        </svg>
+                      </a>
+                    </span>
+              
+              
+                    
+                   
+
+
+ 
+ 
+ </div>
+ 
+ </div>
+ 
+ </footer>
+ 
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+</body>
+
+</html>
