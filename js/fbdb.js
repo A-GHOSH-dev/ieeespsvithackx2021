@@ -36,7 +36,7 @@ const tmn3 = document.querySelector("#teammemname3");
 const tme3 = document.querySelector("#teammememail3");
 const send = document.querySelector("#bttn");
 
-send.addEventListener("click", function (){
+send.addEventListener("click", function(){
     const fn = firstnname.value;
     const ln = lastname.value;
     const eml = lemail.value;
