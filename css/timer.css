@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
 #clockdiv{ 
     width: 100%;
     font-family: sans-serif; 
@@ -7,6 +7,7 @@
     font-weight: bolder; 
     text-align: center; 
     font-size: 40px; 
+    font-family: 'Bridge', sans-serif;
 } 
 
 #clockdiv > div{ 
@@ -62,7 +63,7 @@
     justify-content: center;
     align-items: center;
     font-weight: bolder;
-    min-height: 100vh;
+    min-height: 55vh;
     
   }
   .pbody .containerp {
@@ -78,9 +79,23 @@
     width: 300px;
     height: 300px;
     margin: 0 auto;
-    background: rgb(173, 3, 117);
+    font-size: large;
+    font-family: 'Zen Tokyo Zoo', cursive;
+                                                
+    
+    background: rgba( 255, 66, 211, 0.10 );
+    
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    
+    
+    
+
+
+
+
     border-radius: 15px;
-   
+  
   }
   .pbody .containerp .cardp .facep {
     position: absolute;
