@@ -83,7 +83,7 @@
     font-family: 'Zen Tokyo Zoo', cursive;
                                                 
     
-    background: rgba( 255, 66, 211, 0.10 );
+    background: rgba(226, 84, 183, 0.1);
     
     backdrop-filter: blur( 20.0px );
     -webkit-backdrop-filter: blur( 20.0px );
@@ -166,7 +166,14 @@
 
 
 
-
+  #effect {
+         
+          
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
 
 
