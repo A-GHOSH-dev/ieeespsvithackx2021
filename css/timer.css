@@ -83,7 +83,8 @@
     font-family: 'Zen Tokyo Zoo', cursive;
                                                 
     
-    background: rgba(228, 121, 205, 0.123);
+    /*background: rgba(228, 121, 205, 0.123);*/
+    background: rgba(98, 152, 233, 0.096);
     
     backdrop-filter: blur( 0 );
     -webkit-backdrop-filter: blur( 20.0px );
@@ -143,7 +144,7 @@
     z-index: 10;
   }
   .pbody .containerp .cardp:hover .facep.facep2 {
-    height: 60px;
+    height: 0px;
   }
   .pbody .containerp .cardp:hover .facep.facep2 img {
     font-size: 2em;
